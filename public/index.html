@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGTRAVELS</title>
+    <link rel="stylesheet" href="css/output.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body class="overflow-x-hidden">
+    <!-- <!-- this is the div holding the background image -- -->
+    <nav class="navbar md:h-[15vh] bg-blue-900">
+        <div class="flex w-full justify-between items-center md:px-14 py-3">
+            <div class="logo text-white text-3xl md:mt-3 mt-1 font-bold mx-3">
+                <a href="index.html">GGTravels</a>
+            </div>
+
+            <div class="mt-4 md:justify-center space-x-3 hidden md:flex">
+                <a href="about.html" class="text-white text-md hover:text-slate-400 mt-1">About</a>
+                <a href="contact.html" class="text-white text-md hover:text-slate-400 mt-1">Contact</a>
+                <a href="NGN.html"
+                    class="px-2 text-sm py-2 bg-white text-blue-500 rounded-md hover:bg-slate-400 hover:text-white">NGN</a>
+                <a href="customerservice.html" class="text-xl text-center mt-1 hover:text-slate-400 text-white"><i
+                        class="ph ph-question"></i></a>
+                <a href="listproperty.html"
+                    class="px-2 text-sm py-2 bg-white text-blue-500 hover:bg-slate-400 hover:text-white rounded">List your
+                    Property</a>
+                <a href="signin.html"
+                    class="px-3 py-2 text-sm rounded-md text-blue-500 hover:bg-slate-400 hover:text-white  bg-white">Sign in</a>
+            </div>
+            <!-- hamburger menu and profile -->
+            <div class="md:hidden sm:block mx-4 text-3xl text-white">
+                <i class="ph ph-user-circle"></i>
+                <i class="ph ph-list"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- menu -->
+    <div class=" flex gap-2 md:ml-20 ml-10 pb-5 space-x-1 md:space-x-3 mt-10">
+        <div class=" hover:text-blue-500 h-7 text-center  ">
+            <i class="ph ph-bed"></i>
+            <a href="index.html" class=" hover:rounded-full">Stays</a>
+        </div>
+        <div class=" hover:text-blue-500 h-7 text-center">
+            <i class="ph ph-airplane-in-flight"></i>
+            <a href="flight.html">Flight</a>
+        </div>
+        <div class=" hover:text-blue-500 h-7 text-center ">
+            <i class="ph ph-car"></i>
+            <a href="carhire.html">Car Hire</a>
+        </div>
+        <div class=" hover:text-blue-500 h-7 text-center ">
+            <i class="ph ph-package"></i>
+            <a href="packages.html">Packages</a>
+        </div>
+
+    </div>
+    <!-- hero-section -->
+    <div class="container flex flex-col-reverse items-center px-6 mx-auto md:mx-16 mt-10 space-y-0 md:flex-row">
+        <!-- left item -->
+        <div class="flex flex-col md:mb-28 mt-14 space-y-12 md:w-1/2 ">
+            <h1 class="max-w-md text-4xl font-bold text-center md:text-6xl md:text-left">Everything <br> made Easy
+                with <br> <span style="color: #5555f0;">GG Travels</span> </h1>
+            <p class="max-w-sm text-center md:text-left">find your next stay for cheaper and affordable prices on
+                homes,hotels and so much more... </p>
+        </div>
+        <!-- right item -->
+        <div class="md:w-1/2 md:ml-8">
+            <img src="images/travel girl" class="rounded-full md:ml-16" alt="">
+        </div>
+    </div>
+    <!-- booking -->
+    <div>
+        <div class="flex container flex-col md:flex-row justify-center items-center mt-20">
+            <div class=" border-4 px-8 py-3 border-solid border-yellow-500 text-center">
+                <h3 class="text-md"><i class="ph ph-bed text-md"></i>Where are you going?</h3>
+            </div>
+            <div class="border-4 px-8 py-3 border-solid border-yellow-500">
+                <h3><i class="ph ph-calendar-dots"></i>Checkin - Checkout <i class="ph ph-caret-down"></i></h3>
+            </div>
+            <div class="border-4 px-8 py-3 border-solid border-yellow-500">
+                <h3><i class="ph ph-user"></i> Adult.0child.1room <i class="ph ph-caret-down"></i></h3>
+            </div>
+            <div class="border-4 md:px-8 px-24 py-3 border-solid border-yellow-500 text-center bg-blue-600">
+                <h3 class="font-bold text-white">Search</h3>
+            </div>
+        </div>
+    </div>
+    <div class="propertytype mt-16">
+        <div>
+            <h2 class="font-bold md:text-3xl text-2xl text-center mb-7">Browse by property type</h2>
+        </div>
+        <!-- <div class="swiper">
+            <div class="img-wrapper">
+                <div class="swiper-wrapper flex flex-nowrap gap-10 justify-center items-center">
+                    <div class="swiper-slide">
+                        <img src="images/hotel room" alt="" class="rounded-xl">
+                        <h4 class="text-center font-bold pt-2">Hotels</h4>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/apartment" alt="" class="rounded-xl">
+                        <h4 class="text-center font-bold pt-2">Apartment</h4>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/resort" alt="" class="rounded-xl">
+                        <h4 class="text-center font-bold pt-2">Resort</h4>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/villa" alt="" class="rounded-xl ">
+                        <h4 class="text-center font-bold pt-2">Villa</h4>
+                    </div>
+                </div>
+                swiper things
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+        </div> -->
+
+        <div class="mx-16 md:mx-12">
+            <div>
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                   
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="images/hotelsmain.jpeg" alt="" class="rounded-xl">
+                            <p class="font-bold text-center pt-1">hotel</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/apartments.jpeg" alt="" class="rounded-xl w-auto">
+                            <p class="font-bold text-center pt-1">Apartment</p>
+                        </div>
+                       
+                        <div class="swiper-slide">
+                            <img src="images/villas.jpeg" alt="" class="rounded-xl w-auto h-auto">
+                            <p class="font-bold text-center pt-1">Villa</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/resorts.jpeg" alt="" class="rounded-xl w-auto">
+                            <p class="font-bold text-center pt-1">Resort</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/cabins.jpeg" alt="" class="rounded-xl w-auto">
+                            <p class="font-bold text-center pt-1">Cabins</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/cottages.jpeg" alt="" class="rounded-xl w-auto">
+                            <p class="font-bold text-center pt-1">Cottagesp>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/glamping sites.jpeg" alt="" class="rounded-xl w-auto">
+                            <p class="font-bold text-center pt-1">Glamping Sites</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/serviced apartments.jpeg" alt="" class="rounded-xl w-auto">
+                            <p class="font-bold text-center pt-1">Serviced Apartments</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/holiday homes.jpeg" alt="" class="rounded-xl w-auto">
+                            <p class="font-bold text-center pt-1">Holiday Homes</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/guest house.jpeg" alt="" class="rounded-xl w-auto">
+                            <p class="font-bold text-center pt-1">Guest House</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/hostels.jpeg" alt="" class="rounded-xl w-auto">
+                            <p class="font-bold text-center pt-1">Hostels</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/motels.jpeg" alt="" class="rounded-xl w-auto">
+                            <p class="font-bold text-center pt-1">Motels</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/B&Bs.jpeg" alt="" class="rounded-xl w-auto">
+                            <p class="font-bold text-center pt-1">B&Bs</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/ryokans.jpeg" alt="" class="rounded-xl w-auto">
+                            <p class="font-bold text-center pt-1">Ryokans</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/riads.jpeg" alt="" class="rounded-xl w-auto">
+                            <p class="font-bold text-center pt-1">Riads</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/holiday parks.jpeg" alt="" class="rounded-xl w-auto">
+                            <p class="font-bold text-center pt-1">Holiday Parks</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/home stays.jpeg" alt="" class="rounded-xl w-auto">
+                            <p class="font-bold text-center pt-1">Home Stays</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/campsites.jpeg" alt="" class="rounded-xl w-auto">
+                            <p class="font-bold text-center pt-1">Campsites</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/country houses.jpeg" alt="" class="rounded-xl w-auto">
+                            <p class="font-bold text-center pt-1">Country House</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/farm stays.jpeg" alt="" class="rounded-xl w-auto">
+                            <p class="font-bold text-center pt-1">Farm Stays</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/boats.jpeg" alt="" class="rounded-xl w-auto">
+                            <p class="font-bold text-center pt-1">Boats</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/luxury tents.jpeg" alt="" class="rounded-xl w-auto">
+                            <p class="font-bold text-center pt-1">Luxury Tents</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/self catering accommodation.jpeg" alt="" class="rounded-xl w-auto">
+                            <p class="font-bold text-center pt-1">Self Catering Accommodation</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/tiny houses.jpeg" alt="" class="rounded-xl w-auto">
+                            <p class="font-bold text-center pt-1">Tiny Houses</p>
+                        </div>
+                        <div class="">
+                            <i class="ph ph-caret-right px-4 py-2 rounded-full bg-white"></i>
+                            <i class="ph ph-caret-left px-4 py-2 rounded-full bg-white"></i>
+                        </div>
+                    </div>
+                   
+                    <div class="">
+                        <div class="swiper-button-prev "></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <!-- <div class="relative">
+                        <i class="ph ph-caret-right px-4 py-2 rounded-full bg-white"></i>
+                        <i class="ph ph-caret-left"></i>
+                    </div> -->
+                    
+                </div>
+               
+            </div>
+        
+            <!-- trending destination -->
+            <div class="mt-14">
+                <div>
+                    <h4 class="font-bold md:text-3xl text-2xl text-center">Trending Destinations</h4>
+                </div>
+                <div class="places hidden md:block mt-5">
+                    <div class="grid md:grid-cols-3 grid-cols-6 gap-10 justify-center items-center">
+                        <div class="relative">
+                            <h4 class="absolute top-6 font-bold text-xl left-3 text-white z-50 hover:text-slate-300"><a href="ikeja.html">Ikeja</a><i
+                                    class="ph ph-heart"></i>
+                            </h4>
+                            <div class="destination">
+                                <img src="images/capetown1.jpg" alt="" class="rounded-md">
+                                <div class="overlay absolute top-0 left-0 right-0 bottom-0 w-full z-1"></div>
+                            </div>
+                            
+                        </div>
+                        <div class="relative">
+                            <h4 class="absolute top-6 font-bold text-xl left-3 text-white hover:text-slate-300 z-50"><a href="lagos.html">Lagos</a><i
+                                    class="ph ph-heart"></i>
+                            </h4>
+                            <div class="destination">
+                                <img src="images/Lagos1.jpg" alt="" class="rounded-xl ">
+                                <div class="overlay absolute top-0 left-0 right-0 bottom-0 w-full z-1"></div>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <h4 class="absolute top-6 font-bold text-xl left-3 text-white z-50 hover:text-slate-300">Maldives <i
+                                    class="ph ph-heart"></i>
+                            </h4>
+                            <div class="destination">
+                                <img src="images/maldives1.jpg" alt="" class="rounded-xl">
+                                <div class="overlay absolute top-0 left-0 right-0 bottom-0 w-full z-1"></div>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <h4 class="absolute top-6 font-bold text-xl left-3 z-50 text-white hover:text-slate-300"> <a href="london.html">London</a><i
+                                    class="ph ph-heart"></i>
+                            </h4>
+                            <div class="destination">
+                                <img src="images/london3.jpg" alt="" class="rounded-xl">
+                                <div class="overlay absolute top-0 left-0 right-0 bottom-0 w-full z-1"></div>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <h4 class="absolute top-6 font-bold text-xl left-3 text-white z-50 hover:text-slate-300"><a href="abuja.html">Abuja</a> <i
+                                    class="ph ph-heart"></i>
+                            </h4>
+                            <div class="relative">
+                                <img src="images/santorini2.jpg" alt="" class="rounded-xl">
+                                <div class="overlay absolute top-0 left-0 right-0 bottom-0 w-full z-1"></div>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <h4 class="absolute top-6 font-bold text-xl left-3 text-white hover:text-slate-300 z-50"><a href="paris.html">Paris</a> <i
+                                    class="ph ph-heart"></i>
+                            </h4>
+                            <div class="relative">
+                                <img src="images/pais4.jpg" alt="" class="rounded-xl ">
+                                <div class="overlay absolute top-0 left-0 right-0 bottom-0 w-full z-1"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="md:hidden">
+                    <div class="swiper2">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper mt-7">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <h4 class="absolute top-6 font-bold z-50 text-xl left-3 hover:text-blue-400 text-white"><a href="#">Ikeja</a><i
+                                        class="ph ph-heart"></i>
+                                </h4>
+                                <div>
+                                    <img src="images/capetown1.jpg" alt="" class="rounded-md w-auto">
+                                    <div class="overlay absolute top-0 left-0 right-0 bottom-0 w-full z-1"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <h4 class="absolute top-6 z-50 font-bold text-xl left-3 hover:text-blue-400 text-white"><a href="lagos.html">Lagos</a> <i
+                                        class="ph ph-heart"></i>
+                                </h4>
+                                <div>
+                                    <img src="images/Lagos1.jpg" alt="" class="rounded-md w-auto">
+                                    <div class="overlay absolute top-0 left-0 right-0 bottom-0 w-full z-1"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <h4 class="absolute top-6 font-bold text-xl left-3 text-white z-50 hover:text-blue-400">Maldives <i
+                                        class="ph ph-heart"></i>
+                                </h4>
+                                <div>
+                                    <img src="images/maldives1.jpg" alt="" class="rounded-md w-auto">
+                                    <div class="overlay absolute top-0 left-0 right-0 bottom-0 w-full z-1"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <h4 class="absolute top-6 font-bold text-xl left-3 text-white z-50 hover:text-blue-400"><a href="#">Abuja</a> <i
+                                        class="ph ph-heart"></i>
+                                </h4>
+                                <div>
+                                    <img src="images/santorini2.jpg" alt="" class="rounded-md w-auto">
+                                    <div class="overlay absolute top-0 left-0 right-0 bottom-0 w-full z-1"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <h4 class="absolute top-6 font-bold text-xl left-3 text-white z-50 hover:text-blue-400"><a href="#">London</a> <i
+                                        class="ph ph-heart"></i>
+                                </h4>
+                               <div>
+                                    <img src="images/london3.jpg" alt="" class="rounded-md w-auto">
+                                    <div class="overlay absolute top-0 left-0 right-0 bottom-0 w-full z-1"></div>
+                               </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <h4 class="absolute top-6 font-bold text-xl left-3 text-white z-50 hover:text-blue-400"><a href="#">Paris</a><i
+                                        class="ph ph-heart"></i>
+                                </h4>
+                                <div>
+                                    <img src="images/pais4.jpg" alt="" class="rounded-md w-auto">
+                                    <div class="overlay absolute top-0 left-0 right-0 bottom-0 w-full z-1"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- offers -->
+            <div class="md:mt-24 mt-16">
+                <div class=" md:container md:ml-20  md:mb-0 mb-5 ">
+                    <h4 class="md:text-2xl text-2xl font-bold text-left">Offers</h4>
+                    <p class="text-sm ">promotions, deals and special offers for you.</p>
+                </div>
+                <div class="md:flex hidden justify-between md:px-16 py-5 mt-8 relative rounded-lg bg-gray-100">
+                    <!-- left side -->
+                    <div class="">
+                        <h4 class="font-bold md:text-xl sm:hidden md:block text-md">Go for a good time, not a long time
+                        </h4>
+                        <p class=" md:text-sm text-justify sm:hidden md:block">Finish the year with a mini break.Save
+                            20% or
+                            more when you book and stay by 27th December 2024.</p>
+                        <button type="submit" class="md:px-6 py-2 px-4 mt-4 bg-blue-600 text-white rounded-md">Find Late
+                            Escape
+                            Deals
+                        </button>
+                    </div>
+
+                    <!-- right side -->
+                    <div class="rounded-md md:w-[13%] relative">
+                        <img src="images/enjoying people.jpg" alt="" class="absolute top-3 rounded-md">
+                    </div>
+                </div>
+                <div class="md:hidden sm:block flex md:-ml-10 -ml-5 md:gap-0 gap-10 bg-gray-100 p-5">
+                    <div>
+                        <h4 class="font-bold">Small Trip, Big Fun</h4>
+                        <p class="text-sm">Finish your year with a mini break and save at least 15%.</p>
+                        <button type="submit"
+                            class="md:px-6 py-2 px-3 mt-4 bg-blue-600 hover:border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 text-white rounded-md">
+                            Late Escape Deals
+                        </button>
+                    </div>
+                    <div class="relative w-[50%] md:w-0">
+                        <img src="images/enjoying people.jpg" alt="" class="absolute top-8 md:top-0 rounded-lg">
+                    </div>
+                </div>
+            </div>
+            <!-- herosetion -->
+            <div class=" md:mt-20 mt-12">
+                <div class="md:text-2xl text-xl font-bold md:mx-16 md:-ml-0 -ml-5 ">
+                    <h4>Popular with travellers from Nigeria</h4>
+                </div>
+
+                <div class="hidden md:block">
+                    <div class="flex md:gap-10 md:ml-16 mt-10 mb-10">
+                        <a href="#" class=" px-4 py-2 bg-blue-700 rounded-lg text-white">Domestic cities</a>
+                        <a href="#"
+                            class="hover:text-blue-700 px-4 py-2 bg-blue-700 rounded-lg text-white ">International
+                            cities</a>
+                        <a href="#" class="hover:text-blue-700 px-4 py-2 bg-blue-700 rounded-lg text-white">Regions</a>
+                        <a href="#"
+                            class="hover:text-blue-700 px-4 py-2 bg-blue-700 rounded-lg text-white">Countries</a>
+                        <a href="#" class="hover:text-blue-700 px-4 py-2 bg-blue-700 rounded-lg text-white ">Places to
+                            Stay</a>
+                    </div>
+                    <div class="grid md:grid-cols-5 md:gap-10 md:ml-[12] md:mx-16">
+                        <div class=" flex flex-col gap-y-1 text-sm">
+                            <a href="#">Ikeja hotels</a>
+                            <a href="#">Ibadan hotels</a>
+                            <a href="#">Ikate hotels</a>
+                            <a href="#">Ojota hotels</a>
+                            <a href="#">Agege hotels</a>
+                        </div>
+                        <div class="flex flex-col gap-y-1 text-sm">
+                            <a href="#">Abuja hotels</a>
+                            <a href="#">Portharcourt hotels</a>
+                            <a href="#">Abeoukuta hotels</a>
+                            <a href="#">Akure hotels</a>
+                            <a href="#">Ikota hotels</a>
+                        </div>
+                        <div class="flex flex-col gap-y-1 text-sm">
+                            <a href="#">Lagos hotels</a>
+                            <a href="#">Benin hotels</a>
+                            <a href="#">Asokoro hotels</a>
+                            <a href="#">Asaba hotels</a>
+                            <a href="#">Karu hotels</a>
+                        </div>
+                        <div class="flex flex-col gap-y-1 text-sm">
+                            <a href="#">Lekki hotels</a>
+                            <a href="#">Wuse hotels</a>
+                            <a href="#">Enugu hotels</a>
+                            <a href="#">Sangotedo hotels</a>
+                            <a href="#">Garki hotels</a>
+                        </div>
+                        <div class="flex flex-col gap-y-1 text-sm">
+                            <a href="#">Gwaripa hotels</a>
+                            <a href="#">Aja hotels</a>
+                            <a href="#">Maitama hotels</a>
+                            <a href="#">Ikoyi hotels</a>
+                            <a href="#">Uyo hotels</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="md:hidden">
+
+                    <div class="swiper3">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper md:gap-0 md:mt-0 mt-5">
+                            <!-- Slides -->
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col text-lg md:text-sm font-bold pt-2 text-center">
+                                    <a href="#">Ikeja hotels</a>
+                                    <a href="#">Ibadan hotels</a>
+                                    <a href="#">Ikate hotels</a>
+                                    <a href="#">Ojota hotels</a>
+                                    <a href="#">Agege hotels</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="flex flex-col text-lg md:text-sm font-bold pt-2 text-center">
+                                    <a href="#">Abuja hotels</a>
+                                    <a href="#">Portharcourt hotels</a>
+                                    <a href="#">Abeoukuta hotels</a>
+                                    <a href="#">Akure hotels</a>
+                                    <a href="#">Ikota hotels</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="flex flex-col text-lg md:text-sm font-bold pt-2 text-center ">
+                                    <a href="#">Lagos hotels</a>
+                                    <a href="#">Benin hotels</a>
+                                    <a href="#">Asokoro hotels</a>
+                                    <a href="#">Asaba hotels</a>
+                                    <a href="#">Karu hotels</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="flex flex-col text-lg md:text-sm font-bold pt-2 text-center">
+                                    <a href="#">Lekki hotels</a>
+                                    <a href="#">Wuse hotels</a>
+                                    <a href="#">Enugu hotels</a>
+                                    <a href="#">Sangotedo hotels</a>
+                                    <a href="#">Garki hotels</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="flex flex-col text-lg md:text-sm font-bold pt-2 text-center">
+                                    <a href="#">Gwaripa hotels</a>
+                                    <a href="#">Aja hotels</a>
+                                    <a href="#">Maitama hotels</a>
+                                    <a href="#">Ikoyi hotels</a>
+                                    <a href="#">Uyo hotels</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination
+                    <div class="swiper-pagination"></div> -->
+
+                        <!-- If we need navigation buttons -->
+                        <!-- <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div> -->
+
+                        <!-- If we need scrollbar -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
+                    </div>
+                </div>
+                <!-- footer -->
+                <div class="mt-16">
+                   <div class="hidden md:block">
+                        <div class="grid md:grid-cols-5 grid-cols-2 md:mx-10 md:gap-16 ">
+                            <div class="flex flex-col gap-y-1 text-sm">
+                                <a href="#" class="font-bold text-md mb-2">Support</a>
+                                <a href="#" class=" hover:text-blue-800">Coronavirus (COVID-19) FAQs</a>
+                                <a href="#" class=" hover:text-blue-800">Manage your trips</a>
+                                <a href="#" class=" hover:text-blue-800">Contact Customer Service</a>
+                                <a href="#" class=" hover:text-blue-800">Safety resource centre</a>
+                            </div>
+                            <div class="flex flex-col gap-y-1 text-sm">
+                                <a href="#" class="font-bold text-md mb-2">Discover</a>
+                                <a href="#" class=" hover:text-blue-800">Genius loyalty programme</a>
+                                <a href="#" class=" hover:text-blue-800">Seasonal and holiday deals</a>
+                                <a href="#" class=" hover:text-blue-800">Travel articles</a>
+                                <a href="#" class=" hover:text-blue-800">Car hire</a>
+                                <a href="#" class=" hover:text-blue-800">Flight finder</a>
+                                <a href="#" class=" hover:text-blue-800">Restaurant reservations</a>
+                                <a href="#" class=" hover:text-blue-800">GG Travel Agents</a>
+                            </div>
+                            <div class="flex flex-col gap-y-1 text-sm">
+                                <a href="#" class="font-bold text-md mb-2">Terms and settings</a>
+                                <a href="#" class=" hover:text-blue-800">Privacy & cookies</a>
+                                <a href="#" class=" hover:text-blue-800">Terms and condition</a>
+                                <a href="#" class=" hover:text-blue-800">Partner Dispute</a>
+                                <a href="#" class=" hover:text-blue-800">Modern Slavery Statement</a>
+                                <a href="#" class=" hover:text-blue-800">Human Rights Statement</a>
+                            </div>
+                            <div class="flex flex-col gap-y-1 text-sm">
+                                <a href="#" class="font-bold text-md mb-2">Partners</a>
+                                <a href="#" class=" hover:text-blue-800">Extranet login</a>
+                                <a href="#" class=" hover:text-blue-800">List your property</a>
+                                <a href="#" class=" hover:text-blue-800">Partner Help</a>
+                                <a href="#" class=" hover:text-blue-800">Become an affiliate</a>
+                            </div>
+                            <div class="flex flex-col gap-y-1 text-sm">
+                                <a href="#" class="font-bold text-md mb-2">About</a>
+                                <a href="#" class=" hover:text-blue-800">About GG Travels</a>
+                                <a href="#" class=" hover:text-blue-800">How we operate</a>
+                                <a href="#" class=" hover:text-blue-800">Sustainability</a>
+                                <a href="#" class=" hover:text-blue-800">Press Center</a>
+                                <a href="#" class=" hover:text-blue-800">Corporate Contact</a>
+                            </div>
+                        </div>
+                   </div>
+
+                    <div class="md:hidden block ">
+                        <div class="swiper8 md:mx-0 mx-10">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper gap-16">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="flex flex-col gap-y-1 text-sm">
+                                        <a href="#" class="font-bold mb-2">Support</a>
+                                        <a href="#" class=" hover:text-blue-800">Coronavirus (COVID-19) FAQs</a>
+                                        <a href="#" class=" hover:text-blue-800">Manage your trips</a>
+                                        <a href="#" class=" hover:text-blue-800">Contact Customer Service</a>
+                                        <a href="#" class=" hover:text-blue-800">Safety resource centre</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="flex flex-col gap-y-1 text-sm">
+                                        <a href="#" class="font-bold mb-2">Discover</a>
+                                        <a href="#" class=" hover:text-blue-800">Genius loyalty programme</a>
+                                        <a href="#" class=" hover:text-blue-800">Seasonal and holiday deals</a>
+                                        <a href="#" class=" hover:text-blue-800">Travel articles</a>
+                                        <a href="#" class=" hover:text-blue-800">Car hire</a>
+                                        <a href="#" class=" hover:text-blue-800">Flight finder</a>
+                                        <a href="#" class=" hover:text-blue-800">Restaurant reservations</a>
+                                        <a href="#" class=" hover:text-blue-800">GG Travel Agents</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="flex flex-col gap-y-1 text-sm">
+                                        <a href="#" class="font-bold mb-2">Terms and settings</a>
+                                        <a href="#" class=" hover:text-blue-800">Privacy & cookies</a>
+                                        <a href="#" class=" hover:text-blue-800">Terms and condition</a>
+                                        <a href="#" class=" hover:text-blue-800">Partner Dispute</a>
+                                        <a href="#" class=" hover:text-blue-800">Modern Slavery Statement</a>
+                                        <a href="#" class=" hover:text-blue-800">Human Rights Statement</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="flex flex-col gap-y-1 text-sm">
+                                        <a href="#" class="font-bold mb-2">Partners</a>
+                                        <a href="#" class=" hover:text-blue-800">Extranet login</a>
+                                        <a href="#" class=" hover:text-blue-800">List your property</a>
+                                        <a href="#" class=" hover:text-blue-800">Partner Help</a>
+                                        <a href="#" class=" hover:text-blue-800">Become an affiliate</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="flex flex-col gap-y-1 text-sm">
+                                        <a href="#" class="font-bold mb-2">About</a>
+                                        <a href="#" class=" hover:text-blue-800">About GG Travels</a>
+                                        <a href="#" class=" hover:text-blue-800">How we operate</a>
+                                        <a href="#" class=" hover:text-blue-800">Sustainability</a>
+                                        <a href="#" class=" hover:text-blue-800">Press Center</a>
+                                        <a href="#" class=" hover:text-blue-800">Corporate Contact</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-16 md:mx-0 ">
+                    <h4 class="text-sm text-center md:text-nowrap text-wrap">GG Travels is part of Booking Holdings Inc.,
+                        the world leader in online travel and related services. <br>
+                        Copyright © 2020–2024 GG Travels™. All rights reserved.
+                    </h4>
+                </div>
+                <!-- linking swiper js -->
+                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+                <!-- linking custom script -->
+                <!-- <script src="script.js"></script> -->
+
+                <script>
+                    const swiper = new Swiper('.swiper', {
+                        // Optional parameters
+                        direction: 'horizontal',
+                        // slidesPerView: 4,
+                        spaceBetween: 30,
+                        loop: true,
+
+                        // If we need pagination
+                        pagination: {
+                            el: '.swiper-pagination',
+                        },
+
+                        // Navigation arrows
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+
+                        // And if we need scrollbar
+                        scrollbar: {
+                            el: '.swiper-scrollbar',
+                        },
+                        breakpoints: {
+                            // Responsive breakpoints for mobile devices
+                            1024: {
+                                slidesPerView: 4,          // 3 slides for larger screens
+                            },
+                            768: {
+                                slidesPerView: 2,          // 2 slides for medium screens
+                            },
+                            480: {
+                                slidesPerView: 1,          // 1 slide for smaller screens
+                            }
+                        }
+
+                    });
+                </script>
+                <script>
+                    const swiper2 = new Swiper('.swiper2', {
+                        // Optional parameters
+                        direction: 'horizontal',
+                        slidesPerView: 1,
+                        spaceBetween: 30,
+                        loop: true,
+
+                        // If we need pagination
+                        pagination: {
+                            el: '.swiper-pagination',
+                        },
+
+                        // Navigation arrows
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+
+                        // And if we need scrollbar
+                        scrollbar: {
+                            el: '.swiper-scrollbar',
+                        },
+                    });
+                </script>
+
+                <script>
+                    const swiper3 = new Swiper('.swiper3', {
+                        // Optional parameters
+                        direction: 'horizontal',
+                        slidesPerView: 1,
+                        loop: true,
+
+                        // If we need pagination
+                        pagination: {
+                            el: '.swiper-pagination',
+                        },
+
+                        // Navigation arrows
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+
+                        // And if we need scrollbar
+                        scrollbar: {
+                            el: '.swiper-scrollbar',
+                        },
+                    });
+                </script>
+               <script>
+                    const swiper8 = new Swiper('.swiper8', {
+                        // Optional parameters
+                        direction: 'horizontal',
+                        slidesPerView: 1,
+                        loop: true,
+
+                        // If we need pagination
+                        pagination: {
+                            el: '.swiper-pagination',
+                        },
+
+                        // Navigation arrows
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+
+                        // And if we need scrollbar
+                        scrollbar: {
+                            el: '.swiper-scrollbar',
+                        },
+                    });
+                </script> 
+</body>
+
+</html>
